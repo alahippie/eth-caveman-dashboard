@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ETH Caveman Companion</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.9.0/dist/web3.min.js"></script>
+</head>
+<body>
+  <h1>ETH Caveman Companion</h1>
+  <p><strong>Wallet:</strong> <span id="address">0x32530948992871D127f63681622175E3Eb0bb452</span></p>
+  <p><strong>Balance (ETH):</strong> <span id="balance">--</span></p>
+  
+  <h2>One‑Tap Free Stuff</h2>
+  <button onclick="openURL('https://faucet.triangleplatform.com/zksync_era')">zkSync Faucet</button>
+  <button onclick="openURL('https://faucet.quicknode.com/base')">Base Faucet</button>
+  <button onclick="openURL('https://faucet.triangleplatform.com/arbitrum')">Arbitrum Faucet</button>
+  <button onclick="openURL('https://layer3.xyz/tasks')">Layer3 Tasks</button>
+  <button onclick="openURL('https://galxe.com')">Galxe Airdrops</button>
+  <button onclick="openURL('https://debank.com/quest')">Debank Quests</button>
+  
+  <h2>Daily Checklist</h2>
+  <ul id="checklist">
+    <li><label><input type="checkbox" data-key="faucets"> Faucets claimed</label></li>
+    <li><label><input type="checkbox" data-key="tasks"> 3 quests done</label></li>
+    <li><label><input type="checkbox" data-key="microearn"> Cointiply check</label></li>
+  </ul>
+
+  <script src="app.js"></script>
+</body>
+</html>
